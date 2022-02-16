@@ -4,7 +4,7 @@ import { observer } from 'mobx-react-lite'
 import { globalStore } from '@store/global.store'
 import { cameraStore } from '@store/camera.store'
 
-const prefix = process.env.PUBLIC_URL + 'images/icons/'
+const prefix = process.env.PUBLIC_URL + '/images/icons/'
 
 export const SettingsCamera: React.FC<{}> = observer(() => {
   return (

@@ -6,7 +6,7 @@ import { globalStore } from '@store/global.store'
 
 import { Settings } from '@components/Settings'
 
-const prefix = process.env.PUBLIC_URL + 'images/icons/'
+const prefix = process.env.PUBLIC_URL + '/images/icons/'
 
 export const Menu: React.FC<{}> = observer(() => {
   const screenSVG = globalStore.screenMode ? 'screen.svg' : 'fullscreen.svg'

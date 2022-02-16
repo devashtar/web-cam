@@ -2,7 +2,7 @@ import React from 'react'
 import * as Styled from './styled'
 import { globalStore } from '@store/global.store'
 
-const prefix = process.env.PUBLIC_URL + 'images/icons/'
+const prefix = process.env.PUBLIC_URL + '/images/icons/'
 
 export const Settings: React.FC<{}> = () => {
   return (

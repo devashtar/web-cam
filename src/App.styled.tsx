@@ -7,7 +7,7 @@ export const App = styled.div`
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    top / cover no-repeat url(${prefix + 'images/bg-image.jpg'});
+    top / cover no-repeat url(${prefix + '/images/bg-image.jpg'});
 
   display: flex;
   justify-content: center;
