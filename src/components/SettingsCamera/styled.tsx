@@ -65,7 +65,7 @@ export const Close = styled.button`
   z-index: 10000;
 `
 
-export const inputWrapper = styled.div`
+export const InputWrapper = styled.div`
   position: relative;
   margin-top: 8px;
 

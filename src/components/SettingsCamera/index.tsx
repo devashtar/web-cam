@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import * as Styled from './styled'
 import { observer } from 'mobx-react-lite'
 import { globalStore } from '@store/global.store'
@@ -17,7 +17,7 @@ export const SettingsCamera: React.FC<{}> = observer(() => {
           X
         </Styled.Close>
 
-        <Styled.inputWrapper title='interval update frame'>
+        <Styled.InputWrapper title='interval update frame'>
           <Styled.Icon src={prefix + 'update.svg'} alt='interval' />
           <Styled.Label htmlFor='interval'>interval:</Styled.Label>
           <Styled.Status>{cameraStore.interval / 1000}</Styled.Status>
@@ -30,8 +30,8 @@ export const SettingsCamera: React.FC<{}> = observer(() => {
             value={cameraStore.interval / 1000}
             step='1'
           />
-        </Styled.inputWrapper>
-        <Styled.inputWrapper title='number of frames in a given time interval'>
+        </Styled.InputWrapper>
+        <Styled.InputWrapper title='number of frames in a given time interval'>
           <Styled.Icon src={prefix + 'fps.svg'} alt='fps' />
           <Styled.Label htmlFor='fps'>fps:</Styled.Label>
           <Styled.Status>{cameraStore.fps}</Styled.Status>
@@ -44,8 +44,8 @@ export const SettingsCamera: React.FC<{}> = observer(() => {
             value={cameraStore.fps}
             step='1'
           />
-        </Styled.inputWrapper>
-        <Styled.inputWrapper title='resolution of the resulting image'>
+        </Styled.InputWrapper>
+        <Styled.InputWrapper title='resolution of the resulting image'>
           <Styled.Icon src={prefix + 'settings2.svg'} alt='resolution' />
           <Styled.Label htmlFor='resolution'>resolution</Styled.Label>
           <Styled.List>
@@ -65,8 +65,8 @@ export const SettingsCamera: React.FC<{}> = observer(() => {
               )
             })}
           </Styled.List>
-        </Styled.inputWrapper>
-        <Styled.inputWrapper title='choose a camera'>
+        </Styled.InputWrapper>
+        <Styled.InputWrapper title='choose a camera'>
           <Styled.Icon src={prefix + 'camera.svg'} alt='camera' />
           <Styled.Label htmlFor='camera'>camera</Styled.Label>
           <Styled.List>
@@ -82,7 +82,7 @@ export const SettingsCamera: React.FC<{}> = observer(() => {
               )
             })}
           </Styled.List>
-        </Styled.inputWrapper>
+        </Styled.InputWrapper>
       </Styled.Block>
     </Styled.Container>
   )
