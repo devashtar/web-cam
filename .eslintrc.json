@@ -1,0 +1,10 @@
+{
+    "overrides": [
+        {
+            "files": ["**/*.js", "**/*.ts", "**/*.jsx", "**/*tsx"],
+            "rules": {
+                "react-hooks/exhaustive-deps": "off"
+            }
+        }
+    ]
+}
